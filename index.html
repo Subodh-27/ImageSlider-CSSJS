@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider-items">
+        <img src="images/flowers.jpg" alt="First Image" class="slider-item" />
+        <img src="images/grass.jpg" alt="Second Image" class="slider-item" />
+        <img src="images/clouds.jpg" alt="Third Image" class="slider-item" />
+      </div>
+
+      <div class="slider-controls">
+        <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+        <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+      </div>
+
+      <div class="slider-indicators">
+        <span onclick="moveTo(1)"></span>
+        <span onclick="moveTo(2)"></span>
+        <span onclick="moveTo(3)"></span>
+      </div>
+
+      <div class="slider-content">
+        <h3>Flower</h3>
+        <h3>Grass</h3>
+        <h3>Clouds</h3>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
